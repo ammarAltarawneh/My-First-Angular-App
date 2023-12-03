@@ -1,0 +1,12 @@
+<label for="">Student Name</label>
+<input 
+type="text"
+class="form-control"
+[(ngModel)]="studentName"
+>
+<br>
+<button
+class="btn btn-primary"
+[disabled]="allowNewStudent"
+(click)="onAddedStudent()">Add Student</button>
+<p>{{status}}</p>
