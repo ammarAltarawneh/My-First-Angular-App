@@ -6,15 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './assignment2.component.css'
 })
 export class Assignment2Component {
-studentName : string;
+studentName ='';
 status='Wait to enter a Student Name!';
-allowNewStudent= true;
-
-constructor(){
-	if(this.studentName !=''){
-    this.allowNewStudent= false;
-  }
-	}
 
 onAddedStudent(){  
   this.status='Student "' + this.studentName + '" is added!'
